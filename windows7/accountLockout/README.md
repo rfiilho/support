@@ -8,7 +8,7 @@
 - Entrar em modo de segurança
 - CMD
 ```sh
-$ net user administrador <senha> active:yes
+$ net user administrador <novasenha> active:yes
 ```
 
 ### Solução 02
