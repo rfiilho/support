@@ -1,0 +1,69 @@
+@echo off
+cls
+:menu
+cls
+color 02
+
+date /t
+echo  ====================================================
+echo Computador: %computername%        Usuario: %username%
+echo  =========================================V.1.0.0====
+
+@echo:
+@echo:
+                   
+echo            MENU TAREFAS
+echo  ==================================
+echo * 1. Desinstalar                   * 
+echo * 2. Instalar                      *
+echo * 3. Reiniciar                     *
+echo * 4. Sair                          *
+echo  ==================================
+@echo:
+@echo:
+
+
+set /p opcao= Escolha uma opcao: 
+echo ------------------------------
+if %opcao% equ 1 goto opcao1
+if %opcao% equ 2 goto opcao2
+if %opcao% equ 3 goto opcao3
+if %opcao% equ 4 goto opcao4
+if %opcao% GEQ 5 goto opcao5
+
+:opcao1
+cls
+cd C:\Program Files\Mozilla Firefox\uninstall\
+helper.exe
+echo ==================================
+echo *          Desinstalado          *
+echo ==================================
+pause
+goto menu
+
+:opcao2
+cls
+cd C:\
+"Firefox Setup 51.0.1.exe" /S
+echo ==================================
+echo *          Instalado             *
+echo ==================================
+pause
+goto menu
+
+:opcao3
+cls
+exit
+
+:opcao4
+cls
+exit
+
+
+:opcao5
+echo ==============================================
+echo * Opcao Invalida! Escolha outra opcao do menu *
+echo ==============================================
+pause
+goto menu
+
