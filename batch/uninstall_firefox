@@ -34,7 +34,7 @@ if %opcao% GEQ 5 goto opcao5
 :opcao1
 cls
 cd C:\Program Files\Mozilla Firefox\uninstall\
-helper.exe
+helper.exe /S
 echo ==================================
 echo *          Desinstalado          *
 echo ==================================
@@ -53,6 +53,7 @@ goto menu
 
 :opcao3
 cls
+shutdown /r
 exit
 
 :opcao4
