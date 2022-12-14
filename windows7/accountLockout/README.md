@@ -25,3 +25,8 @@ CTRL + U (tela de login) e inserir
 ```sh
 $ net accounts /lockout window:0
 ```
+ou
+```sh
+$ net user administrador /active:yes
+$ net user administrador Abcd@1234@@
+```
